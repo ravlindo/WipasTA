@@ -26,10 +26,9 @@
                         <div class="d-table-cell">
                             <div class="container">
                                 <div class="slider-text">
-                                    <h1>PREVALENT SWIMMING & DIVING CENTER</h1>
+                                    <h1>WIPASTA WISATA PANTAI TULUNGAGUNG</h1>
                                     <p>
-                                        Here is actually no correlation between swimming and scuba diving. Swimming is the act of keeping ourselves
-                                        above the water. As scuba diving is done under the water than technically we don't need to know how to swim.
+                                        Pantai-pantai di Tulungagung menawarkan keindahan alam yang masih terjaga dengan perpaduan pasir pantai, batuan karang, dan luasnya Samudra Hindia. Suasana yang tenang serta panorama alam yang menawan menjadikan kawasan ini sebagai tempat ideal untuk melepas penat dan menikmati keindahan alam pesisir.
                                     </p>
 
                                     <div class="slider-btn">
@@ -47,10 +46,9 @@
                         <div class="d-table-cell">
                             <div class="container">
                                 <div class="slider-text">
-                                    <h1>LEARN SWIMMING THE RIGHT WAY WITH US</h1>
+                                    <h1>Keindahan Alam Pantai Tulungagung</h1>
                                     <p>
-                                        Here is actually no correlation between swimming and scuba diving. Swimming is the act of keeping ourselves
-                                        above the water. As scuba diving is done under the water than technically we don't need to know how to swim.
+                                        Kabupaten Tulungagung memiliki deretan pantai eksotis dengan ciri khas masing-masing, mulai dari pantai berpasir putih hingga tebing karang yang megah. Keasrian lingkungan dan pemandangan matahari terbenam yang memukau membuat pantai-pantai ini menjadi destinasi favorit bagi wisatawan yang mencari pengalaman wisata alam.
                                     </p>
 
                                     <div class="slider-btn">
@@ -68,10 +66,9 @@
                         <div class="d-table-cell">
                             <div class="container">
                                 <div class="slider-text">
-                                    <h1>WE WILL MAKE YOU NEXT LEVEL SWIMMER</h1>
+                                    <h1>Eksplorasi Pantai Tulungagung</h1>
                                     <p>
-                                        Here is actually no correlation between swimming and scuba diving. Swimming is the act of keeping ourselves
-                                        above the water. As scuba diving is done under the water than technically we don't need to know how to swim.
+                                        Pantai Tulungagung menyimpan pesona alam yang beragam, menghadirkan panorama laut yang luas, ombak yang menenangkan, serta keindahan alam yang masih alami. Destinasi ini cocok bagi wisatawan yang ingin berwisata, bersantai, maupun mengabadikan momen indah di tepi pantai.
                                     </p>
 
                                     <div class="slider-btn">
@@ -170,94 +167,11 @@
         <!-- About Area End -->
 
         <!-- Service Area -->
-        <section class="service-area pt-100 pb-70">
-            <div class="container">
-                <div class="section-title text-center mb-50">
-                    <span>Our Services</span>
-                    <h2>Dobby Provides Services</h2>
-                    <p>
-                        The introduced now, the they expect, animals the desk, and catch temple.
-                        More seven my couldn't it the character using recommended.
-                    </p>
-                </div>
 
-                <div class="service-item-area owl-carousel owl-theme">
-                    <div class="service-item">
-                        <a href="service-details.html" class="service-item-icon">
-                            <i class="flaticon-swimming"></i>
-                        </a>
-                        <a href="service-details.html" class="service-head">
-                            <h3>Swimming & Diving</h3>
-                        </a>
-                        <p>
-                            As sign what each derided to organizaasd tion. Remodelling
-                            that, win word as have the proceeded lots subject
-
-                        </p>
-                    </div>
-
-                    <div class="service-item">
-                        <a href="service-details.html" class="service-item-icon">
-                            <i class="flaticon-teacher"></i>
-                        </a>
-                        <a href="service-details.html" class="service-head">
-                            <h3>Teaching Swimming & Diving</h3>
-                        </a>
-                        <p>
-                            As sign what each derided to organizaasd tion. Remodelling
-                            that, win word as have the proceeded lots subject
-                        </p>
-                    </div>
-
-                    <div class="service-item">
-                        <a href="service-details.html" class="service-item-icon">
-                            <i class="flaticon-flipper"></i>
-                        </a>
-                        <a href="service-details.html" class="service-head">
-                            <h3>Swimming Equipments</h3>
-                        </a>
-                        <p>
-                            As sign what each derided to organizaasd tion. Remodelling
-                            that, win word as have the proceeded lots subject
-                        </p>
-                    </div>
-
-                    <div class="service-item">
-                        <a href="service-details.html" class="service-item-icon">
-                            <i class="flaticon-swimming"></i>
-                        </a>
-                        <a href="service-details.html" class="service-head">
-                            <h3>Swimming & Diving</h3>
-                        </a>
-                        <p>
-                            As sign what each derided to organizaasd tion. Remodelling that,
-                            win word as have the proceeded lots subject
-                        </p>
-                    </div>
-                </div>
-            </div>
-        </section>
         <!-- Service Area End -->
 
         <!-- Apply Area -->
-        <div class="apply-area">
-            <div class="container">
-                <div class="apply-text">
-                    <span>Apply for Job</span>
-                    <h2>We Are Hiring Expertise for Three Different Categories</h2>
-                    <p>
-                        It willingly room, drew even in place structure  he its holding to view. Need harder my in how
-                        there's into receive wanted ambushed that home, his this it position. Room, on by was it heard parks.
-                        Compared one Room. Testimony you mister music.Discipline assets briefs with tone completely
-                    </p>
 
-                    <div class="apply-btn">
-                        <a href="contact.html" class="default-btn1">Apply Now</a>
-                        <a href="services.html" class="default-btn2 ml-20">Our Career</a>
-                    </div>
-                </div>
-            </div>
-        </div>
         <!-- Apply Area End -->
 
         <!-- Course Area -->
@@ -339,95 +253,7 @@
         <!-- Course Area End -->
 
         <!-- Product Area -->
-        <section class="product-area pt-100 pb-70">
-            <div class="container">
-                <div class="section-title text-center mb-50">
-                    <span>Our Products </span>
-                    <h2>Buy the Equipment You Need</h2>
-                    <p>
-                        The introduced now, the they expect, animals the desk, and catch
-                        temple. More seven my couldn't it the character using recommended.
-                    </p>
-                </div>
-                <div class="row justify-content-center">
-                    <div class="col-lg-3 col-sm-6">
-                        <div class="product-item">
-                            <a href="shop-details.html">
-                                <img src="{{ asset("template/assets/img/product/1.jpg") }}" alt="Product Images">
-                            </a>
-                            <div class="product-cotent">
-                                <div class="product-text">
-                                    <a href="shop-details.html">
-                                        <h3>Diving Glass</h3>
-                                    </a>
-                                    <span>$35</span>
-                                </div>
-                                <a href="shop-details.html" class="add-product">
-                                    <i class="flaticon-plus"></i>
-                                </a>
-                            </div>
-                        </div>
-                    </div>
 
-                    <div class="col-lg-3 col-sm-6">
-                        <div class="product-item">
-                            <a href="shop-details.html">
-                                <img src="{{ asset("template/assets/img/product/2.jpg") }}" alt="Product Images">
-                            </a>
-                            <div class="product-cotent">
-                                <div class="product-text">
-                                    <a href="shop-details.html">
-                                        <h3>Diving Rite</h3>
-                                    </a>
-                                    <span>$30</span>
-                                </div>
-                                <a href="shop-details.html" class="add-product">
-                                    <i class="flaticon-plus"></i>
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="col-lg-3 col-sm-6">
-                        <div class="product-item">
-                            <a href="shop-details.html">
-                                <img src="{{ asset("template/assets/img/product/3.jpg") }}" alt="Product Images">
-                            </a>
-                            <div class="product-cotent">
-                                <div class="product-text">
-                                    <a href="shop-details.html">
-                                        <h3>Fins Bungee</h3>
-                                    </a>
-                                    <span>$75</span>
-                                </div>
-                                <a href="shop-details.html" class="add-product">
-                                    <i class="flaticon-plus"></i>
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="col-lg-3 col-sm-6">
-                        <div class="product-item">
-                            <a href="shop-details.html">
-                                <img src="{{ asset("template/assets/img/product/4.jpg") }}" alt="Product Images">
-                            </a>
-                            <div class="product-cotent">
-                                <div class="product-text">
-                                    <a href="shop-details.html">
-                                        <h3>Life Jacket</h3>
-                                    </a>
-                                    <span>$25</span>
-                                </div>
-                                <a href="shop-details.html" class="add-product">
-                                    <i class="flaticon-plus"></i>
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
         <!-- Product Area End -->
 
         <!-- Gallery Area -->
@@ -515,171 +341,7 @@
         <!-- Gallery Area End -->
 
         <!-- Trainers Area -->
-        <section class="trainers-area pb-70">
-            <div class="container">
-                <div class="section-title text-center mb-50">
-                    <span>Our Trainers</span>
-                    <h2>Our Professional Trainers</h2>
-                    <p>
-                        The introduced now, the they expect, animals the desk, and catch temple.
-                        More seven my couldn't it the character using recommended.
-                    </p>
-                </div>
-                <div class="row justify-content-center">
-                    <div class="col-lg-3 col-sm-6">
-                        <div class="trainer-card">
-                            <a href="instructor.html">
-                                <img src="{{ asset("template/assets/img/trainers/1.jpg") }}" alt="Trainers Images">
-                            </a>
-                            <div class="trainer-content">
-                                <a href="instructor.html">
-                                    <h3>John Doe</h3>
-                                </a>
-                                <span>Professional Diver</span>
-                                <div class="social-icon">
-                                    <ul>
-                                        <li>
-                                            <a href="https://www.facebook.com/login/" target="_blank">
-                                                <i class="fab fa-facebook-f"></i>
-                                            </a>
-                                        </li>
-                                        <li>
-                                            <a href="https://twitter.com/i/flow/login" target="_blank">
-                                                <i class="fab fa-twitter"></i>
-                                            </a>
-                                        </li>
-                                        <li>
-                                            <a href="https://www.instagram.com/accounts/login/?hl=en" target="_blank">
-                                                <i class="fab fa-instagram"></i>
-                                            </a>
-                                        </li>
-                                        <li>
-                                            <a href="https://www.google.com/" target="_blank">
-                                                <i class="fab fa-google-plus-g"></i>
-                                            </a>
-                                        </li>
-                                    </ul>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
 
-                    <div class="col-lg-3 col-sm-6">
-                        <div class="trainer-card">
-                            <a href="instructor.html">
-                                <img src="{{ asset("template/assets/img/trainers/2.jpg") }}" alt="Trainers Images">
-                            </a>
-                            <div class="trainer-content">
-                                <a href="instructor.html">
-                                    <h3>Evana Doe</h3>
-                                </a>
-                                <span>Professional Trainer</span>
-                                <div class="social-icon">
-                                    <ul>
-                                        <li>
-                                            <a href="https://www.facebook.com/login/" target="_blank">
-                                                <i class="fab fa-facebook-f"></i>
-                                            </a>
-                                        </li>
-                                        <li>
-                                            <a href="https://twitter.com/i/flow/login" target="_blank">
-                                                <i class="fab fa-twitter"></i>
-                                            </a>
-                                        </li>
-                                        <li>
-                                            <a href="https://www.instagram.com/accounts/login/?hl=en" target="_blank">
-                                                <i class="fab fa-instagram"></i>
-                                            </a>
-                                        </li>
-                                        <li>
-                                            <a href="https://www.google.com/" target="_blank">
-                                                <i class="fab fa-google-plus-g"></i>
-                                            </a>
-                                        </li>
-                                    </ul>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="col-lg-3 col-sm-6">
-                        <div class="trainer-card">
-                            <a href="instructor.html">
-                                <img src="{{ asset("template/assets/img/trainers/3.jpg") }}" alt="Trainers Images">
-                            </a>
-                            <div class="trainer-content active">
-                                <a href="instructor.html">
-                                    <h3>Smith Doe</h3>
-                                </a>
-                                <span>Professional Swimmer</span>
-                                <div class="social-icon active">
-                                    <ul>
-                                        <li>
-                                            <a href="https://www.facebook.com/login/" target="_blank">
-                                                <i class="fab fa-facebook-f"></i>
-                                            </a>
-                                        </li>
-                                        <li>
-                                            <a href="https://twitter.com/i/flow/login" target="_blank">
-                                                <i class="fab fa-twitter"></i>
-                                            </a>
-                                        </li>
-                                        <li>
-                                            <a href="https://www.instagram.com/accounts/login/?hl=en" target="_blank">
-                                                <i class="fab fa-instagram"></i>
-                                            </a>
-                                        </li>
-                                        <li>
-                                            <a href="https://www.google.com/" target="_blank">
-                                                <i class="fab fa-google-plus-g"></i>
-                                            </a>
-                                        </li>
-                                    </ul>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="col-lg-3 col-sm-6">
-                        <div class="trainer-card">
-                            <a href="instructor.html">
-                                <img src="{{ asset("template/assets/img/trainers/4.jpg") }}" alt="Trainers Images">
-                            </a>
-                            <div class="trainer-content">
-                                <a href="instructor.html">
-                                    <h3>Marida Doe</h3>
-                                </a>
-                                <span>Professional Instructor</span>
-                                <div class="social-icon">
-                                    <ul>
-                                        <li>
-                                            <a href="https://www.facebook.com/login/" target="_blank">
-                                                <i class="fab fa-facebook-f"></i>
-                                            </a>
-                                        </li>
-                                        <li>
-                                            <a href="https://twitter.com/i/flow/login" target="_blank">
-                                                <i class="fab fa-twitter"></i>
-                                            </a>
-                                        </li>
-                                        <li>
-                                            <a href="https://www.instagram.com/accounts/login/?hl=en" target="_blank">
-                                                <i class="fab fa-instagram"></i>
-                                            </a>
-                                        </li>
-                                        <li>
-                                            <a href="https://www.google.com/" target="_blank">
-                                                <i class="fab fa-google-plus-g"></i>
-                                            </a>
-                                        </li>
-                                    </ul>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
         <!-- Trainers Area End -->
 
         <!-- News Area -->

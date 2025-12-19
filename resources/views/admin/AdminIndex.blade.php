@@ -1,0 +1,236 @@
+<!doctype html>
+<html lang="en">
+
+@include('admin.adminlayout.head')
+
+<body>
+
+    <div id="layout-wrapper">
+
+        <header id="page-topbar">
+            <div class="navbar-header">
+                <div class="d-flex">
+                    <div class="navbar-brand-box">
+                        <a href="index.html" class="logo logo-dark">
+                            <span class="logo-sm">
+                                <img src="{{ asset('AdminPage/assets/images/logo-sm.png') }}" alt=""
+                                    height="22">
+                            </span>
+                            <span class="logo-lg">
+                                <img src="{{ asset('AdminPage/assets/images/logo-dark.png') }}" alt=""
+                                    height="20">
+                            </span>
+                        </a>
+
+                        <a href="index.html" class="logo logo-light">
+                            <span class="logo-sm">
+                                <img src="{{ asset('AdminPage/assets/images/logo-sm.png') }}" alt=""
+                                    height="22">
+                            </span>
+                            <span class="logo-lg">
+                                <img src="{{ asset('AdminPage/assets/images/logo-light.png') }}" alt=""
+                                    height="20">
+                            </span>
+                        </a>
+                    </div>
+
+                    <button type="button"
+                        class="btn btn-sm px-3 font-size-16 header-item waves-effect vertical-menu-btn">
+                        <i class="fa fa-fw fa-bars"></i>
+                    </button>
+
+                    <form class="app-search d-none d-lg-block">
+                        <div class="position-relative">
+                            <input type="text" class="form-control" placeholder="Search...">
+                            <span class="uil-search"></span>
+                        </div>
+                    </form>
+                </div>
+
+                <div class="d-flex">
+                    <div class="dropdown d-inline-block d-lg-none ms-2">
+                        <button type="button" class="btn header-item noti-icon waves-effect"
+                            id="page-header-search-dropdown" data-bs-toggle="dropdown" aria-haspopup="true"
+                            aria-expanded="false">
+                            <i class="uil-search"></i>
+                        </button>
+                    </div>
+
+                    <div class="dropdown d-inline-block">
+                        <button type="button" class="btn header-item waves-effect" id="page-header-user-dropdown"
+                            data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            <img class="rounded-circle header-profile-user"
+                                src="{{ asset('AdminPage/assets/images/users/avatar-4.jpg') }}" alt="Header Avatar">
+                            <span class="d-none d-xl-inline-block ms-1 fw-medium font-size-15">Marcus</span>
+                            <i class="uil-angle-down d-none d-xl-inline-block font-size-15"></i>
+                        </button>
+                        <div class="dropdown-menu dropdown-menu-end">
+                            <a class="dropdown-item" href="#"><i
+                                    class="uil uil-user-circle font-size-18 align-middle text-muted me-1"></i> <span
+                                    class="align-middle">View Profile</span></a>
+                            <a class="dropdown-item" href="#"><i
+                                    class="uil uil-sign-out-alt font-size-18 align-middle me-1 text-muted"></i> <span
+                                    class="align-middle">Sign out</span></a>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </header>
+
+        <div class="container mt-4">
+
+            {{-- Alert Success --}}
+            @if (session('success'))
+                <div class="alert alert-success alert-dismissible fade show" role="alert">
+                    {{ session('success') }}
+                    <button type="button" class="btn-close" data-bs-dismiss="alert"></button>
+                </div>
+            @endif
+        </div>
+
+
+        <div class="main-content">
+
+            <div class="page-content">
+                <div class="container-fluid">
+
+                    <!-- start page title -->
+                    <div class="row">
+                        <div class="col-12">
+                            <div class="page-title-box d-flex align-items-center justify-content-between">
+                                <h4 class="mb-0">Kelola About</h4>
+
+                                <div class="page-title-right">
+                                    <ol class="breadcrumb m-0">
+                                        <li class="breadcrumb-item"><a href="javascript: void(0);">Admin</a></li>
+                                        <li class="breadcrumb-item active">About</li>
+                                    </ol>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                    <!-- end page title -->
+
+                    <div class="row">
+                        <div class="col-12">
+                            <div class="card">
+                                <div class="card-body">
+                                    <div class="d-flex justify-content-between align-items-center mb-4">
+                                        <h4 class="card-title">Data About</h4>
+                                        <a href="{{ route('admin.about.create') }}" class="btn btn-primary">
+                                            <i class="fas fa-plus"></i> Tambah About
+                                        </a>
+                                    </div>
+
+                                    <div class="table-responsive">
+                                        <table class="table table-striped table-hover mb-0">
+                                            <thead class="table-light">
+                                                <tr>
+                                                    <th>#</th>
+                                                    <th>Title</th>
+                                                    <th>Gambar Besar</th>
+                                                    <th>Gambar Kanan</th>
+                                                    <th>Deskripsi</th>
+                                                    <th>Dibuat</th>
+                                                    <th>Aksi</th>
+                                                </tr>
+                                            </thead>
+                                            <tbody>
+                                                @forelse($about as $item)
+                                                <tr>
+                                                    <th scope="row">{{ $loop->iteration }}</th>
+                                                    <td>{{ $item->title }}</td>
+                                                    <td>
+                                                        @if($item->gambar_besar)
+                                                            <img src="{{ asset('storage/' . $item->gambar_besar) }}" alt="Gambar Besar" class="img-thumbnail" style="max-width: 100px; max-height: 100px;">
+                                                        @else
+                                                            <span class="text-muted">Tidak ada gambar</span>
+                                                        @endif
+                                                    </td>
+                                                    <td>
+                                                        @if($item->gambar_kanan)
+                                                            <img src="{{ asset('storage/' . $item->gambar_kanan) }}" alt="Gambar Kanan" class="img-thumbnail" style="max-width: 100px; max-height: 100px;">
+                                                        @else
+                                                            <span class="text-muted">Tidak ada gambar</span>
+                                                        @endif
+                                                    </td>
+                                                    <td>
+                                                        {{ Str::limit($item->deskripsi, 100) }}
+                                                    </td>
+                                                    <td>{{ $item->created_at->format('d M Y') }}</td>
+                                                    <td>
+                                                        <div class="btn-group" role="group">
+                                                            <a href="{{ route('admin.about.edit', $item->id) }}" class="btn btn-sm btn-warning">
+                                                                <i class="fas fa-edit"></i> Edit
+                                                            </a>
+                                                            <form action="{{ route('about.destroy', $item->id) }}" method="POST" class="d-inline" onsubmit="return confirm('Apakah Anda yakin ingin menghapus data ini?')">
+                                                                @csrf
+                                                                @method('DELETE')
+                                                                <button type="submit" class="btn btn-sm btn-danger">
+                                                                    <i class="fas fa-trash"></i> Hapus
+                                                                </button>
+                                                            </form>
+                                                        </div>
+                                                    </td>
+                                                </tr>
+                                                @empty
+                                                <tr>
+                                                    <td colspan="7" class="text-center text-muted">
+                                                        <i class="fas fa-inbox fa-2x mb-2"></i>
+                                                        <br>
+                                                        Belum ada data About
+                                                    </td>
+                                                </tr>
+                                                @endforelse
+                                            </tbody>
+                                        </table>
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+
+                        </div>
+                    </div>
+                    <!-- end row -->
+
+                </div> <!-- container-fluid -->
+            </div>
+            <!-- End Page-content -->
+
+
+            <footer class="footer">
+                <div class="container-fluid">
+                    <div class="row">
+                        <div class="col-sm-6">
+                            <script>
+                                document.write(new Date().getFullYear())
+                            </script> © Minible.
+                        </div>
+                        <div class="col-sm-6">
+                            <div class="text-sm-end d-none d-sm-block">
+                                Crafted with <i class="mdi mdi-heart text-danger"></i> by <a
+                                    href="https://themesbrand.com/" target="_blank"
+                                    class="text-reset">Themesbrand</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </footer>
+        </div>
+
+        @include('admin.adminlayout.sidebar')
+
+    </div>
+    @include('admin.adminlayout.rightsidebar')
+    <div class="rightbar-overlay"></div>
+
+    @include('admin.adminlayout.javascript')
+
+    <script src="assets/js/app.js"></script>
+
+</body>
+
+</html>

@@ -9,11 +9,11 @@ This files table contents are outlined below>>>>>
 
 *******************************************
 *******************************************
-** - Default Btn Style 
-** - Section Title Style  
+** - Default Btn Style
+** - Section Title Style
 ** - Preloader Area Style
-** - Back To Top Button 
-** - Home Page One 
+** - Back To Top Button
+** - Home Page One
 ** - Header Area Style
 ** - Navbar Area Style
 ** - Home Slider Style
@@ -190,7 +190,7 @@ img {
 }
 
 /*================================
-Default Btn Style 
+Default Btn Style
 ===================================*/
 .default-btn1 {
   color: #fff;
@@ -289,7 +289,7 @@ Default Btn Style
 Default Btn Style End
 ===================================*/
 /*================================
-Section Title Style 
+Section Title Style
 ===================================*/
 .section-title span {
   font-size: 17px;
@@ -366,7 +366,7 @@ Section Title Style End
  Preloader End
 ====================================*/
 /*==================================
-Back To Top Button 
+Back To Top Button
 =====================================*/
 #toTop {
   position: fixed;
@@ -399,13 +399,13 @@ Back To Top Button
 }
 
 /*==============================
-Back To Top Button 
+Back To Top Button
 =================================*/
 /*===============================
 Default CSS End
 ==================================*/
 /*================================
-Home Page One Style 
+Home Page One Style
 ==================================*/
 /*================================
 Header Area Style
@@ -983,22 +983,22 @@ Home Slider
 }
 
 .slider-bg1 {
-  background-image: url(../img/home-1/slider1.jpg);
+  background-image: url(../img/home-1/ta1.jpeg);
 }
 
 .slider-bg2 {
-  background-image: url(../img/home-1/slider2.jpg);
+  background-image: url(../img/home-1/ta2.jpeg);
 }
 
 .slider-bg3 {
-  background-image: url(../img/home-1/slider3.jpg);
+  background-image: url(../img/home-1/ta3.jpeg);
 }
 
 /*=================================
- Home Slider End 
+ Home Slider End
 ===================================*/
 /*=================================
-Brand Area 
+Brand Area
 ====================================*/
 .brand-area {
   background-color: #fffafa;
@@ -1019,7 +1019,7 @@ Brand Area
 Brand Area End
 ====================================*/
 /*=================================
-About Section 
+About Section
 ====================================*/
 .about-area {
   background-color: #fffafa;
@@ -1101,7 +1101,7 @@ About Section
 About Section End
 ====================================*/
 /*=================================
-Service Area 
+Service Area
 ====================================*/
 .service-area {
   position: relative;
@@ -1229,7 +1229,7 @@ Service Area
 Services Area End
 ====================================*/
 /*=================================
-Apply Area 
+Apply Area
 ====================================*/
 .apply-area {
   background-image: url(../img/apply-bg.jpg);
@@ -1275,7 +1275,7 @@ Apply Area
 Apply Area End
 ====================================*/
 /*=================================
-Course Section 
+Course Section
 ====================================*/
 .course-area {
   overflow: hidden;
@@ -1368,7 +1368,7 @@ Course Section
 Course Section End
 ====================================*/
 /*=================================
-Product Area 
+Product Area
 ====================================*/
 .product-area {
   background-color: #fffafa;
@@ -1620,7 +1620,7 @@ Trainers Section
 Trainers Section End
 ====================================*/
 /*=================================
-News Area 
+News Area
 ====================================*/
 .news-card {
   margin-bottom: 30px;
@@ -1924,13 +1924,13 @@ Footer Area End
 }
 
 /*==================================
- Footer Area End 
+ Footer Area End
 ==================================*/
 /*==================================
 Home Pages One Style End
 ====================================*/
 /*================================
-Home Page Two Style 
+Home Page Two Style
 ==================================*/
 /*================================
 Nav Top CSS
@@ -1954,7 +1954,7 @@ Nav Top CSS
 Nav Top CSS End
 ==================================*/
 /*================================
-Banner Area 
+Banner Area
 ==================================*/
 .banner-area {
   position: relative;
@@ -2114,7 +2114,7 @@ Apply Another
 Apply Another End
 ==================================*/
 /*================================
-Course Item 
+Course Item
 ==================================*/
 .course-card {
   margin-bottom: 30px;
@@ -2159,7 +2159,7 @@ Course Item
 Course Item End
 ==================================*/
 /*================================
-Testimonial Area 
+Testimonial Area
 ==================================*/
 .testimonial-area {
   z-index: 1;
@@ -2248,7 +2248,7 @@ Testimonial Area
 Testimonial Area End
 ==================================*/
 /*================================
-Home Page Two End 
+Home Page Two End
 ==================================*/
 /*================================
 Inner Banner
@@ -2405,7 +2405,7 @@ Inner Banner End
 }
 
 /*================================
-Contact Page 
+Contact Page
 ==================================*/
 .contact-title h2 {
   font-size: 35px;
@@ -2597,7 +2597,7 @@ Widget Search
 Widget Search End
 ==================================*/
 /*================================
-Widget Categories 
+Widget Categories
 ==================================*/
 .widget-categories {
   margin-bottom: 30px;
@@ -3143,7 +3143,7 @@ Shop Details page
 Shop Details page End
 ====================================*/
 /*=================================
-Cart Page 
+Cart Page
 ===================================*/
 .cart-area .cart-table table {
   margin-bottom: 0;
@@ -3373,7 +3373,7 @@ Cart Page
 Cart Page End
 ===================================*/
 /*=================================
-Checkout Page 
+Checkout Page
 ===================================*/
 .checkout-area .user-option {
   box-shadow: 0 5px 35px 0 rgba(0, 0, 0, 0.08);
@@ -3641,7 +3641,7 @@ Checkout Page
 Checkout Page End
 ===================================*/
 /*=================================
-Instructor Page 
+Instructor Page
 ===================================*/
 .instructor-img {
   margin-bottom: 30px;
@@ -3698,7 +3698,7 @@ Instructor Page
 Instructor Page End
 ===================================*/
 /*=================================
-Testominal Page 
+Testominal Page
 ===================================*/
 .single-testominal {
   background-color: #ffffff;
@@ -3745,7 +3745,7 @@ Testominal Page
 Testominal Page End
 ===================================*/
 /*=================================
-Book Form 
+Book Form
 ===================================*/
 .book-form {
   max-width: 900px;
@@ -3843,7 +3843,7 @@ form Sing
 form Sing End
 ===================================*/
 /*=================================
-Login form 
+Login form
 ===================================*/
 .login-form {
   max-width: 600px;
@@ -3890,7 +3890,7 @@ Login form
 Login form End
 ===================================*/
 /*=================================
-Register form 
+Register form
 ===================================*/
 .register-form {
   max-width: 980px;

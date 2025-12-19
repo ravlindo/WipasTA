@@ -3,22 +3,7 @@
                 <div class="row align-items-center justify-content-center">
                     <div class="col-lg-8">
                         <div class="header-left">
-                            <ul>
-                                <li>
-                                    <i class="fa-solid fa-clock"></i>
-                                    SAT - THU (10:00 AM - 6:00PM)
-                                </li>
-                                <li>
-                                    <i class="fas fa-map-marker-alt"></i>
-                                    28/A Street, New York, USA
-                                </li>
-                                <li>
-                                    <a href="tel:+1123456789">
-                                        <i class="fas fa-phone-alt"></i>
-                                        +1 123 456 789
-                                    </a>
-                                </li>
-                            </ul>
+                    
                         </div>
                     </div>
 

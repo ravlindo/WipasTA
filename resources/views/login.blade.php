@@ -29,7 +29,7 @@
                         <h3>Log In</h3>
                         <ul>
                             <li>
-                                <a href="index.html">Home</a>
+                                <a href="{{ route('landingpage.home') }}">Home</a>
                             </li>
                             <li>
                                 <i class="fas fa-chevron-right"></i>
@@ -84,7 +84,7 @@
                         </div>
                     </form>
                 </div>
-                <p>Don't have an account? <a href="register.html">Resigter Now</a></p>
+                <p>Don't have an account? <a href="{{ route('register.home') }}">Register Now</a></p>
             </div>
         </div>
     </div>
