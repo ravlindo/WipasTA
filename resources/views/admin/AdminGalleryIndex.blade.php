@@ -99,12 +99,12 @@
                     <div class="row">
                         <div class="col-12">
                             <div class="page-title-box d-flex align-items-center justify-content-between">
-                                <h4 class="mb-0">Kelola About</h4>
+                                <h4 class="mb-0">Kelola Gallery</h4>
 
                                 <div class="page-title-right">
                                     <ol class="breadcrumb m-0">
                                         <li class="breadcrumb-item"><a href="javascript: void(0);">Admin</a></li>
-                                        <li class="breadcrumb-item active">About</li>
+                                        <li class="breadcrumb-item active">Gallery</li>
                                     </ol>
                                 </div>
 
@@ -118,9 +118,9 @@
                             <div class="card">
                                 <div class="card-body">
                                     <div class="d-flex justify-content-between align-items-center mb-4">
-                                        <h4 class="card-title">Data About</h4>
-                                        <a href="{{ route('admin.about.create') }}" class="btn btn-primary">
-                                            <i class="fas fa-plus"></i> Tambah About
+                                        <h4 class="card-title">Data Gallery</h4>
+                                        <a href="{{ route('admin.gallery.create') }}" class="btn btn-primary">
+                                            <i class="fas fa-plus"></i> Tambah Gallery
                                         </a>
                                     </div>
 
@@ -130,28 +130,20 @@
                                                 <tr>
                                                     <th>#</th>
                                                     <th>Title</th>
-                                                    <th>Gambar Besar</th>
-                                                    <th>Gambar Kanan</th>
+                                                    <th>Gambar</th>
                                                     <th>Deskripsi</th>
                                                     <th>Dibuat</th>
                                                     <th>Aksi</th>
                                                 </tr>
                                             </thead>
                                             <tbody>
-                                                @forelse($about as $item)
+                                                @forelse($gallery as $item)
                                                 <tr>
                                                     <th scope="row">{{ $loop->iteration }}</th>
                                                     <td>{{ $item->title }}</td>
                                                     <td>
-                                                        @if($item->gambar_besar)
-                                                            <img src="{{ asset('storage/' . $item->gambar_besar) }}" alt="Gambar Besar" class="img-thumbnail" style="max-width: 100px; max-height: 100px;">
-                                                        @else
-                                                            <span class="text-muted">Tidak ada gambar</span>
-                                                        @endif
-                                                    </td>
-                                                    <td>
-                                                        @if($item->gambar_kanan)
-                                                            <img src="{{ asset('storage/' . $item->gambar_kanan) }}" alt="Gambar Kanan" class="img-thumbnail" style="max-width: 100px; max-height: 100px;">
+                                                        @if($item->gambar)
+                                                            <img src="{{ asset('storage/' . $item->gambar) }}" alt="Gambar" class="img-thumbnail" style="max-width: 100px; max-height: 100px;">
                                                         @else
                                                             <span class="text-muted">Tidak ada gambar</span>
                                                         @endif
@@ -162,10 +154,10 @@
                                                     <td>{{ $item->created_at->format('d M Y') }}</td>
                                                     <td>
                                                         <div class="btn-group" role="group">
-                                                            <a href="{{ route('admin.about.edit', $item->id) }}" class="btn btn-sm btn-warning">
+                                                            <a href="{{ route('admin.gallery.edit', $item->id) }}" class="btn btn-sm btn-warning">
                                                                 <i class="fas fa-edit"></i> Edit
                                                             </a>
-                                                            <button type="button" class="btn btn-sm btn-danger delete-about" data-id="{{ $item->id }}" data-title="{{ $item->title }}">
+                                                            <button type="button" class="btn btn-sm btn-danger delete-gallery" data-id="{{ $item->id }}" data-title="{{ $item->title }}">
                                                                 <i class="fas fa-trash"></i> Hapus
                                                             </button>
                                                         </div>
@@ -173,10 +165,10 @@
                                                 </tr>
                                                 @empty
                                                 <tr>
-                                                    <td colspan="7" class="text-center text-muted">
+                                                    <td colspan="6" class="text-center text-muted">
                                                         <i class="fas fa-inbox fa-2x mb-2"></i>
                                                         <br>
-                                                        Belum ada data About
+                                                        Belum ada data Gallery
                                                     </td>
                                                 </tr>
                                                 @endforelse
@@ -238,14 +230,14 @@
 
     <script>
         // SweetAlert untuk delete
-        document.querySelectorAll('.delete-about').forEach(button => {
+        document.querySelectorAll('.delete-gallery').forEach(button => {
             button.addEventListener('click', function() {
                 const id = this.getAttribute('data-id');
                 const title = this.getAttribute('data-title');
 
                 Swal.fire({
                     title: 'Apakah Anda yakin?',
-                    text: `Anda akan menghapus about "${title}". Tindakan ini tidak dapat dibatalkan!`,
+                    text: `Anda akan menghapus gallery "${title}". Tindakan ini tidak dapat dibatalkan!`,
                     icon: 'warning',
                     showCancelButton: true,
                     confirmButtonColor: '#d33',
@@ -256,7 +248,7 @@
                     if (result.isConfirmed) {
                         // Submit form delete
                         const form = document.getElementById('delete-form');
-                        form.action = `/admin/about/${id}`;
+                        form.action = `/admin/gallery/${id}`;
                         form.submit();
                     }
                 });

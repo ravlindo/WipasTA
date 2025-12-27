@@ -19,13 +19,19 @@ class AdminAbout extends Controller
         // Pastikan file view Anda ada di: resources/views/admin/AdminAbout.blade.php
         return view('admin.AdminIndex', compact('about'));
     }
-    public function form()
+    public function form($id = null)
     {
         // Mengambil semua data about dari database
         $about = About::all();
 
-        // Pastikan file view Anda ada di: resources/views/admin/AdminAbout.blade.php
-        return view('admin.AdminFormAbout', compact('about'));
+        // Jika ada ID, berarti mode edit
+        $aboutItem = null;
+        if ($id) {
+            $aboutItem = About::findOrFail($id);
+        }
+
+        // Pastikan file view Anda ada di: resources/views/admin/AdminFormAbout.blade.php
+        return view('admin.AdminFormAbout', compact('about', 'aboutItem'));
     }
 
     /**

@@ -48,30 +48,45 @@
     <!-- Login Area -->
     <div class="login-area ptb-100">
         <div class="container">
-            <div class="login-form">
-                <div class="login-title">
-                    <i class="far fa-user text-center"></i>
-                    <h3>Log In</h3>
-                </div>
+                <div class="login-form">
+                    @if (session('success'))
+                        <div class="alert alert-success alert-dismissible fade show" role="alert">
+                            {{ session('success') }}
+                            <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+                                <span aria-hidden="true">&times;</span>
+                            </button>
+                        </div>
+                    @endif
+                    <div class="login-title">
+                        <i class="far fa-user text-center"></i>
+                        <h3>Log In</h3>
+                    </div>
                 <div class="form-sing">
-                    <form>
+                    <form method="POST" action="{{ route('login') }}">
+                        @csrf
                         <div class="row justify-content-center">
                             <div class="col-lg-12 col-md-12">
                                 <div class="form-group">
-                                    <label>Username</label>
-                                    <input type="text" class="form-control" placeholder="Username">
+                                    <label>Email</label>
+                                    <input type="email" name="email" class="form-control" placeholder="Email" value="{{ old('email') }}" required>
+                                    @error('email')
+                                        <span class="text-danger">{{ $message }}</span>
+                                    @enderror
                                 </div>
                             </div>
 
                             <div class="col-lg-12 col-md-12">
                                 <div class="form-group">
                                     <label>Password</label>
-                                    <input type="password" class="form-control" placeholder="Password">
+                                    <input type="password" name="password" class="form-control" placeholder="Password" required>
+                                    @error('password')
+                                        <span class="text-danger">{{ $message }}</span>
+                                    @enderror
                                 </div>
                             </div>
                             <div class="col-lg-12 col-md-12">
                                 <div class="form-check form-group">
-                                    <input type="checkbox" class="form-check-input" id="ExapleCheckbox">
+                                    <input type="checkbox" name="remember" class="form-check-input" id="ExapleCheckbox">
                                     <label class="form-check-label" for="ExapleCheckbox">Remember me</label>
                                 </div>
                             </div>
@@ -84,7 +99,7 @@
                         </div>
                     </form>
                 </div>
-                <p>Don't have an account? <a href="{{ route('register.home') }}">Register Now</a></p>
+                <p>Don't have an account? <a href="{{ route('register') }}">Register Now</a></p>
             </div>
         </div>
     </div>

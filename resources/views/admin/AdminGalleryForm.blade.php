@@ -85,8 +85,8 @@
                 <div class="alert alert-success alert-dismissible fade show" role="alert">
                     {{ session('success') }}
                     <div class="mt-2">
-                        <a href="{{ route('admin.about.create') }}" class="btn btn-success btn-sm">Tambah About Lagi</a>
-                        <a href="{{ route('about.index') }}" class="btn btn-primary btn-sm">Lihat Semua About</a>
+                        <a href="{{ route('admin.gallery.create') }}" class="btn btn-success btn-sm">Tambah Gallery Lagi</a>
+                        <a href="{{ route('gallery.index') }}" class="btn btn-primary btn-sm">Lihat Semua Gallery</a>
                     </div>
                     <button type="button" class="btn-close" data-bs-dismiss="alert"></button>
                 </div>
@@ -104,12 +104,12 @@
                     <div class="row">
                         <div class="col-12">
                             <div class="page-title-box d-flex align-items-center justify-content-between">
-                                <h4 class="mb-0">{{ isset($aboutItem) ? 'Edit About' : 'Input About' }}</h4>
+                                <h4 class="mb-0">{{ isset($galleryItem) ? 'Edit Gallery' : 'Input Gallery' }}</h4>
 
                                 <div class="page-title-right">
                                     <ol class="breadcrumb m-0">
-                                        <li class="breadcrumb-item"><a href="{{ route('about.index') }}">About</a></li>
-                                        <li class="breadcrumb-item active">{{ isset($aboutItem) ? 'Edit' : 'Input' }}</li>
+                                        <li class="breadcrumb-item"><a href="{{ route('gallery.index') }}">Gallery</a></li>
+                                        <li class="breadcrumb-item active">{{ isset($galleryItem) ? 'Edit' : 'Input' }}</li>
                                     </ol>
                                 </div>
 
@@ -121,13 +121,13 @@
                             <div class="card">
                                 <div class="card-body">
 
-                                    <h4 class="card-title">{{ isset($aboutItem) ? 'Edit Data About' : 'Form Data About' }}</h4>
-                                    <p class="card-title-desc">{{ isset($aboutItem) ? 'Edit data about yang sudah ada.' : 'Silahkan upload gambar dan isi deskripsi untuk halaman About.' }}</p>
+                                    <h4 class="card-title">{{ isset($galleryItem) ? 'Edit Data Gallery' : 'Form Data Gallery' }}</h4>
+                                    <p class="card-title-desc">{{ isset($galleryItem) ? 'Edit data gallery yang sudah ada.' : 'Silahkan upload gambar dan isi deskripsi untuk halaman Gallery.' }}</p>
 
-                                    <form action="{{ isset($aboutItem) ? route('admin.about.update', $aboutItem->id) : route('about.store') }}" method="POST"
+                                    <form action="{{ isset($galleryItem) ? route('admin.gallery.update', $galleryItem->id) : route('gallery.store') }}" method="POST"
                                         enctype="multipart/form-data">
                                         @csrf
-                                        @if(isset($aboutItem))
+                                        @if(isset($galleryItem))
                                             @method('PUT')
                                         @endif
 
@@ -143,38 +143,18 @@
                                         @endif
 
                                         <div class="mb-3 row">
-                                            <label for="gambar_gede" class="col-md-2 col-form-label">Gambar Gede
-                                                (Banner)</label>
+                                            <label for="gambar" class="col-md-2 col-form-label">Gambar</label>
                                             <div class="col-md-10">
-                                                @if(isset($aboutItem) && $aboutItem->gambar_besar)
+                                                @if(isset($galleryItem) && $galleryItem->gambar)
                                                     <div class="mb-2">
-                                                        <img src="{{ asset('storage/' . $aboutItem->gambar_besar) }}" alt="Current Banner Image" class="img-thumbnail" style="max-width: 300px; max-height: 200px;">
-                                                        <p class="text-muted small mt-1">Gambar banner saat ini. Upload gambar baru untuk mengganti.</p>
+                                                        <img src="{{ asset('storage/' . $galleryItem->gambar) }}" alt="Current Image" class="img-thumbnail" style="max-width: 200px; max-height: 200px;">
+                                                        <p class="text-muted small mt-1">Gambar saat ini. Upload gambar baru untuk mengganti.</p>
                                                     </div>
                                                 @endif
-                                                <input class="form-control @error('gambar_gede') is-invalid @enderror" type="file" id="gambar_gede"
-                                                    name="gambar_gede" accept="image/*" {{ isset($aboutItem) ? '' : 'required' }}>
-                                                <div class="form-text">{{ isset($aboutItem) ? 'Upload gambar banner baru jika ingin mengganti (opsional).' : 'Upload gambar banner utama (disarankan ukuran besar/landscape).' }}</div>
-                                                @error('gambar_gede')
-                                                    <div class="invalid-feedback">{{ $message }}</div>
-                                                @enderror
-                                            </div>
-                                        </div>
-
-                                        <div class="mb-3 row">
-                                            <label for="gambar_kanan" class="col-md-2 col-form-label">Gambar
-                                                Kanan</label>
-                                            <div class="col-md-10">
-                                                @if(isset($aboutItem) && $aboutItem->gambar_kanan)
-                                                    <div class="mb-2">
-                                                        <img src="{{ asset('storage/' . $aboutItem->gambar_kanan) }}" alt="Current Right Image" class="img-thumbnail" style="max-width: 200px; max-height: 200px;">
-                                                        <p class="text-muted small mt-1">Gambar kanan saat ini. Upload gambar baru untuk mengganti.</p>
-                                                    </div>
-                                                @endif
-                                                <input class="form-control @error('gambar_kanan') is-invalid @enderror" type="file" id="gambar_kanan"
-                                                    name="gambar_kanan" accept="image/*" {{ isset($aboutItem) ? '' : 'required' }}>
-                                                <div class="form-text">{{ isset($aboutItem) ? 'Upload gambar kanan baru jika ingin mengganti (opsional).' : 'Upload gambar pendamping di sisi kanan.' }}</div>
-                                                @error('gambar_kanan')
+                                                <input class="form-control @error('gambar') is-invalid @enderror" type="file" id="gambar"
+                                                    name="gambar" accept="image/*" {{ isset($galleryItem) ? '' : 'required' }}>
+                                                <div class="form-text">{{ isset($galleryItem) ? 'Upload gambar baru jika ingin mengganti (opsional).' : 'Upload gambar untuk gallery.' }}</div>
+                                                @error('gambar')
                                                     <div class="invalid-feedback">{{ $message }}</div>
                                                 @enderror
                                             </div>
@@ -183,8 +163,8 @@
                                         <div class="mb-3 row">
                                             <label for="title" class="col-md-2 col-form-label">Judul (Title)</label>
                                             <div class="col-md-10">
-                                                <input class="form-control @error('title') is-invalid @enderror" type="text" id="title" name="title" placeholder="Masukkan judul..." value="{{ isset($aboutItem) ? $aboutItem->title : old('title') }}" required>
-                                                <div class="form-text">Judul utama untuk bagian About.</div>
+                                                <input class="form-control @error('title') is-invalid @enderror" type="text" id="title" name="title" placeholder="Masukkan judul..." value="{{ isset($galleryItem) ? $galleryItem->title : old('title') }}" required>
+                                                <div class="form-text">Judul untuk item gallery.</div>
                                                 @error('title')
                                                     <div class="invalid-feedback">{{ $message }}</div>
                                                 @enderror
@@ -195,7 +175,7 @@
                                             <label for="deskripsi" class="col-md-2 col-form-label">Deskripsi</label>
                                             <div class="col-md-10">
                                                 <textarea class="form-control @error('deskripsi') is-invalid @enderror" id="deskripsi" name="deskripsi" rows="6"
-                                                    placeholder="Tuliskan deskripsi lengkap about di sini..." required>{{ isset($aboutItem) ? $aboutItem->deskripsi : old('deskripsi') }}</textarea>
+                                                    placeholder="Tuliskan deskripsi lengkap gallery di sini..." required>{{ isset($galleryItem) ? $galleryItem->deskripsi : old('deskripsi') }}</textarea>
                                                 @error('deskripsi')
                                                     <div class="invalid-feedback">{{ $message }}</div>
                                                 @enderror
@@ -262,9 +242,8 @@
         @endif
 
         // Reset form setelah berhasil submit (hanya untuk mode create)
-        @if(session('success') && !isset($aboutItem))
-            document.getElementById('gambar_gede').value = '';
-            document.getElementById('gambar_kanan').value = '';
+        @if(session('success') && !isset($galleryItem))
+            document.getElementById('gambar').value = '';
             document.getElementById('title').value = '';
             document.getElementById('deskripsi').value = '';
         @endif

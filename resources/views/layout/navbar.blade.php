@@ -1,7 +1,7 @@
      <div class="navbar-area">
          <!-- Menu For Mobile Device -->
          <div class="mobile-nav">
-             <a href="index.html" class="logo">
+             <a href="{{ route('landingpage.home') }}" class="logo">
                  <img src="{{ asset('template/assets/img/logo.png') }}" alt="Logo">
              </a>
          </div>
@@ -10,13 +10,13 @@
          <div class="main-nav">
              <div class="container">
                  <nav class="navbar navbar-expand-md navbar-light ">
-                     <a class="navbar-brand" href="index.html">
+                     <a class="navbar-brand" href="{{ route('landingpage.home') }}">
                          <img src="{{ asset('template/assets/img/logo.png') }}" alt="Logo">
                      </a>
                      <div class="collapse navbar-collapse mean-menu" id="navbarSupportedContent">
                          <ul class="navbar-nav m-auto">
                              <li class="nav-item">
-                                 <a href="#" class="nav-link active">
+                                 <a href="{{ route('landingpage.home') }}" class="nav-link active">
                                      Home
 
                                  </a>
@@ -36,12 +36,12 @@
                                      </li>
 
                                      <li class="nav-item">
-                                         <a href="{{ route('login.home') }}" class="nav-link">
+                                         <a href="{{ route('login') }}" class="nav-link">
                                              Log In
                                          </a>
                                      </li>
                                      <li class="nav-item">
-                                         <a href="{{ route('register.home') }}" class="nav-link">
+                                         <a href="{{ route('register') }}" class="nav-link">
                                              Register
                                          </a>
                                      </li>
@@ -54,7 +54,7 @@
                              </li>
 
                              <li class="nav-item">
-                                 <a href="gallery.html" class="nav-link">
+                                 <a href="{{ route('galeri.home') }}" class="nav-link">
                                      Gallery
                                  </a>
                              </li>

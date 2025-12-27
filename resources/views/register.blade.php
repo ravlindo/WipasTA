@@ -49,54 +49,43 @@
                 <div class="register-form">
                     <h3>Register Now</h3>
                     <div class="form-sing">
-                        <form>
+                        <form method="POST" action="{{ route('register') }}">
+                            @csrf
                             <div class="row justify-content-center">
-                                <div class="col-lg-6 col-md-6">
+                                <div class="col-lg-12 col-md-12">
                                     <div class="form-group">
-                                        <label>First Name</label>
-                                        <input type="text" class="form-control" placeholder="First Name">
+                                        <label>Full Name</label>
+                                        <input type="text" name="name" class="form-control" placeholder="Full Name" value="{{ old('name') }}" required>
+                                        @error('name')
+                                            <span class="text-danger">{{ $message }}</span>
+                                        @enderror
                                     </div>
                                 </div>
 
-                                <div class="col-lg-6 col-md-6">
-                                    <div class="form-group">
-                                        <label>Last Name</label>
-                                        <input type="text" class="form-control" placeholder="Last Name">
-                                    </div>
-                                </div>
-
-                                <div class="col-lg-6 col-md-6">
+                                <div class="col-lg-12 col-md-12">
                                     <div class="form-group">
                                         <label>Your Email</label>
-                                        <input type="text" class="form-control" placeholder="Your Email">
-                                    </div>
-                                </div>
-
-                                <div class="col-lg-6 col-md-6">
-                                    <div class="form-group">
-                                        <label>Your Phone</label>
-                                        <input type="text" class="form-control" placeholder="Your Phone">
-                                    </div>
-                                </div>
-
-                                <div class="col-lg-6 col-md-6">
-                                    <div class="form-group">
-                                        <label>Your Subject</label>
-                                        <input type="text" class="form-control" placeholder="Your Subject">
+                                        <input type="email" name="email" class="form-control" placeholder="Your Email" value="{{ old('email') }}" required>
+                                        @error('email')
+                                            <span class="text-danger">{{ $message }}</span>
+                                        @enderror
                                     </div>
                                 </div>
 
                                 <div class="col-lg-6 col-md-6">
                                     <div class="form-group">
                                         <label>Password</label>
-                                        <input type="password" class="form-control" placeholder="Password">
+                                        <input type="password" name="password" class="form-control" placeholder="Password" required>
+                                        @error('password')
+                                            <span class="text-danger">{{ $message }}</span>
+                                        @enderror
                                     </div>
                                 </div>
 
-                                <div class="col-lg-12 col-md-12">
+                                <div class="col-lg-6 col-md-6">
                                     <div class="form-group">
-                                        <label>Your Message</label>
-                                        <textarea name="message" class="form-message textarea-hight"  cols="30" rows="5"  placeholder="Your Message"></textarea>
+                                        <label>Confirm Password</label>
+                                        <input type="password" name="password_confirmation" class="form-control" placeholder="Confirm Password" required>
                                     </div>
                                 </div>
 
@@ -108,7 +97,7 @@
                             </div>
                         </form>
                     </div>
-                    <p>Have already an account? <a href="{{ route('login.home') }}">Log In</a></p>
+                    <p>Have already an account? <a href="{{ route('login') }}">Log In</a></p>
                 </div>
             </div>
         </div>
