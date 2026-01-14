@@ -28,8 +28,8 @@
        <link rel="stylesheet" href="{{ asset("template/assets/css/theme-dark.css") }}">
 
         <!-- Title -->
-        <title>Dobby - Swimming & Scuba Diving HTML Template</title>
+        <title>WipasTa - Wisata Pantai Tulungangung</title>
 
         <!-- Favicon -->
-        <link rel="icon" type="image/png" href="{{ asset("template/assets/img/favicon.png") }}">
+        <link rel="icon" type="image/png" href="{{ asset("template/assets/img/pp.png") }}">
     </head>

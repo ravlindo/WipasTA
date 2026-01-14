@@ -2,7 +2,7 @@
          <!-- Menu For Mobile Device -->
          <div class="mobile-nav">
              <a href="{{ route('landingpage.home') }}" class="logo">
-                 <img src="{{ asset('template/assets/img/logo.png') }}" alt="Logo">
+                 <img src="{{ asset('template/assets/img/logoo.png') }}" alt="Logo">
              </a>
          </div>
 
@@ -11,7 +11,7 @@
              <div class="container">
                  <nav class="navbar navbar-expand-md navbar-light ">
                      <a class="navbar-brand" href="{{ route('landingpage.home') }}">
-                         <img src="{{ asset('template/assets/img/logo.png') }}" alt="Logo">
+                         <img src="{{ asset('template/assets/img/logoo.png') }}" alt="Logo">
                      </a>
                      <div class="collapse navbar-collapse mean-menu" id="navbarSupportedContent">
                          <ul class="navbar-nav m-auto">
@@ -35,6 +35,21 @@
                                          </a>
                                      </li>
 
+                                     @auth
+                                     <li class="nav-item">
+                                         <a href="{{ route('AdminDasboard.home') }}" class="nav-link">
+                                             Dashboard
+                                         </a>
+                                     </li>
+                                     <li class="nav-item">
+                                         <form action="{{ route('logout') }}" method="POST" style="display: inline;">
+                                             @csrf
+                                             <button type="submit" class="nav-link" style="background: none; border: none; color: inherit; cursor: pointer;">
+                                                 Logout
+                                             </button>
+                                         </form>
+                                     </li>
+                                     @else
                                      <li class="nav-item">
                                          <a href="{{ route('login') }}" class="nav-link">
                                              Log In
@@ -45,6 +60,7 @@
                                              Register
                                          </a>
                                      </li>
+                                     @endauth
                                  </ul>
                              </li>
                              <li class="nav-item">
@@ -60,10 +76,12 @@
                              </li>
 
                              <li class="nav-item">
-                                 <a href="contact.html" class="nav-link">
-                                     Contact
+                                 <a href="{{ route('news.home') }}" class="nav-link">
+                                     News
                                  </a>
                              </li>
+
+                          
                          </ul>
 
                          <div class="other-side">

@@ -4,19 +4,19 @@
                 <div class="navbar-brand-box">
                     <a href="index.html" class="logo logo-dark">
                         <span class="logo-sm">
-                            <img src="{{ asset("AdminPage/assets/images/logo-sm.png") }}" alt="" height="22">
+                            <img src="{{ asset("template/assets/img/logoo.png") }}" alt="" height="22">
                         </span>
                         <span class="logo-lg">
-                            <img src="{{ asset("AdminPage/assets/images/logo-dark.png") }}" alt="" height="20">
+                            <img src="{{ asset("template/assets/img/logoo.png") }}" alt="" height="20">
                         </span>
                     </a>
 
                     <a href="index.html" class="logo logo-light">
                         <span class="logo-sm">
-                            <img src="{{ asset("AdminPage/assets/images/logo-sm.png") }}" alt="" height="22">
+                            <img src="{{ asset("template/assets/img/logoo.png") }}" alt="" height="22">
                         </span>
                         <span class="logo-lg">
-                            <img src="{{ asset("AdminPage/assets/images/logo-light.png") }}" alt="" height="20">
+                            <img src="{{ asset("template/assets/img/logoo.png") }}" alt="" height="20">
                         </span>
                     </a>
                 </div>
@@ -59,6 +59,28 @@
                                 <ul class="sub-menu" aria-expanded="false">
                                     <li><a href="{{ route('gallery.index') }}">Kelola Gallery</a></li>
                                     <li><a href="{{ route('admin.gallery.create') }}">Tambah Gallery</a></li>
+                                </ul>
+                            </li>
+
+                            <li>
+                                <a href="javascript: void(0);" class="has-arrow waves-effect">
+                                    <i class="uil-star"></i>
+                                    <span>Testimonial</span>
+                                </a>
+                                <ul class="sub-menu" aria-expanded="false">
+                                    <li><a href="{{ route('testimonial.index') }}">Kelola Testimonial</a></li>
+                                    <li><a href="{{ route('admin.testimonial.create') }}">Tambah Testimonial</a></li>
+                                </ul>
+                            </li>
+
+                            <li>
+                                <a href="javascript: void(0);" class="has-arrow waves-effect">
+                                    <i class="uil-newspaper"></i>
+                                    <span>Berita</span>
+                                </a>
+                                <ul class="sub-menu" aria-expanded="false">
+                                    <li><a href="{{ route('news.index') }}">Kelola Berita</a></li>
+                                    <li><a href="{{ route('admin.news.create') }}">Tambah Berita</a></li>
                                 </ul>
                             </li>
 

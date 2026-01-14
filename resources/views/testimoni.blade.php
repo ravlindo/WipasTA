@@ -53,139 +53,123 @@
                 <h2>What Our Client's Say About Us</h2>
             </div>
             <div class="row justify-content-center">
+                @forelse($testimonials as $testimonial)
                 <div class="col-lg-6">
                     <div class="single-testominal">
-                        <img src="{{ asset('template/assets/img/testimonial/t1.png') }}" alt="Images">
-                        <h3>Smith Doe</h3>
-                        <span>Software Engineer</span>
+                        @if($testimonial->image)
+                            <img src="{{ asset('storage/' . $testimonial->image) }}" alt="Foto {{ $testimonial->name }}" class="rounded-circle">
+                        @else
+                            <img src="{{ asset('template/assets/img/testimonial/default-avatar.png') }}" alt="Default Avatar" class="rounded-circle">
+                        @endif
+                        <h3>{{ $testimonial->name }}</h3>
+                        <span>Pengunjung</span>
                         <p>
-                            “Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do ei
-                            usmod tempor incididunt ut labore et dolore magna aliqua.
-                            Quis ipsum suspendisse ultrices gravida. Risus commodo.”
+                            "{{ $testimonial->message }}"
                         </p>
                         <ul>
-                            <li>
-                                <i class="fas fa-star"></i>
-                            </li>
-                            <li>
-                                <i class="fas fa-star"></i>
-                            </li>
-                            <li>
-                                <i class="fas fa-star"></i>
-                            </li>
-                            <li>
-                                <i class="fas fa-star"></i>
-                            </li>
-                            <li>
-                                <i class="fas fa-star"></i>
-                            </li>
+                            @for($i = 1; $i <= 5; $i++)
+                                @if($i <= $testimonial->rating)
+                                    <li>
+                                        <i class="fas fa-star"></i>
+                                    </li>
+                                @else
+                                    <li>
+                                        <i class="far fa-star"></i>
+                                    </li>
+                                @endif
+                            @endfor
                         </ul>
                     </div>
                 </div>
-                <div class="col-lg-6">
-                    <div class="single-testominal">
-                        <img src="{{ asset('template/assets/img/testimonial/t2.png') }}" alt="Images">
-                        <h3>Evana Doe</h3>
-                        <span>Market Manager</span>
-                        <p>
-                            “Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do ei
-                            usmod tempor incididunt ut labore et dolore magna aliqua.
-                            Quis ipsum suspendisse ultrices gravida. Risus commodo.”
-                        </p>
-                        <ul>
-                            <li>
-                                <i class="fas fa-star"></i>
-                            </li>
-                            <li>
-                                <i class="fas fa-star"></i>
-                            </li>
-                            <li>
-                                <i class="fas fa-star"></i>
-                            </li>
-                            <li>
-                                <i class="fas fa-star"></i>
-                            </li>
-                            <li>
-                                <i class="fas fa-star"></i>
-                            </li>
-                        </ul>
+                @empty
+                <div class="col-12">
+                    <div class="text-center">
+                        <h4>Belum ada testimonial</h4>
+                        <p>Testimonial dari pengunjung akan muncul di sini setelah ditambahkan melalui admin dashboard atau form di bawah ini.</p>
                     </div>
                 </div>
-                <div class="col-lg-6">
-                    <div class="single-testominal">
-                        <img src="{{ asset('template/assets/img/testimonial/t3.png') }}" alt="Images">
-                        <h3>John Doe</h3>
-                        <span>Designer</span>
-                        <p>
-                            “Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do ei
-                            usmod tempor incididunt ut labore et dolore magna aliqua.
-                            Quis ipsum suspendisse ultrices gravida. Risus commodo.”
-                        </p>
-                        <ul>
-                            <li>
-                                <i class="fas fa-star"></i>
-                            </li>
-                            <li>
-                                <i class="fas fa-star"></i>
-                            </li>
-                            <li>
-                                <i class="fas fa-star"></i>
-                            </li>
-                            <li>
-                                <i class="fas fa-star"></i>
-                            </li>
-                            <li>
-                                <i class="fas fa-star"></i>
-                            </li>
-                        </ul>
-                    </div>
-                </div>
-                <div class="col-lg-6">
-                    <div class="single-testominal">
-                        <img src="{{ asset('template/assets/img/testimonial/t4.png') }}" alt="Images">
-                        <h3>Aana Smith</h3>
-                        <span>Marketing Director</span>
-                        <p>
-                            “Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do ei
-                            usmod tempor incididunt ut labore et dolore magna aliqua.
-                            Quis ipsum suspendisse ultrices gravida. Risus commodo.”
-                        </p>
-                        <ul>
-                            <li>
-                                <i class="fas fa-star"></i>
-                            </li>
-                            <li>
-                                <i class="fas fa-star"></i>
-                            </li>
-                            <li>
-                                <i class="fas fa-star"></i>
-                            </li>
-                            <li>
-                                <i class="fas fa-star"></i>
-                            </li>
-                            <li>
-                                <i class="fas fa-star"></i>
-                            </li>
-                        </ul>
-                    </div>
-                </div>
-                <div class="col-lg-12 col-md-12">
-                    <div class="pagination-area">
-                        <a href="testimonials.html" class="prev page-numbers">
-                            <i class="fas fa-chevron-left"></i>
-                        </a>
-                        <a href="testimonials.html" class="page-numbers current" aria-current="page">1</a>
-                        <a href="testimonials.html" class="page-numbers ">2</a>
-                        <a href="testimonials.html" class="page-numbers">3</a>
-                        <a href="testimonials.html" class="next page-numbers">
-                            <i class="fas fa-chevron-right"></i>
-                        </a>
+                @endforelse
+            </div>
+        </div>
+    </div>
+    <!-- Testimonials Inner End -->
+
+    <!-- Submit Testimonial Section -->
+    <div class="testimonials-submit pt-100 pb-70">
+        <div class="container">
+            <div class="section-title text-center mb-50">
+                <span>Share Your Experience</span>
+                <h2>Submit Your Testimonial</h2>
+                <p>We value your feedback! Share your experience with us.</p>
+            </div>
+            <div class="row justify-content-center">
+                <div class="col-lg-8">
+                    <div class="contact-form">
+                        @if(session('success'))
+                            <div class="alert alert-success" role="alert">
+                                {{ session('success') }}
+                            </div>
+                        @endif
+
+                        @if($errors->any())
+                            <div class="alert alert-danger" role="alert">
+                                <ul class="mb-0">
+                                    @foreach($errors->all() as $error)
+                                        <li>{{ $error }}</li>
+                                    @endforeach
+                                </ul>
+                            </div>
+                        @endif
+
+                        <form action="{{ route('testimoni.submit') }}" method="POST" enctype="multipart/form-data">
+                            @csrf
+                            <div class="row">
+                                <div class="col-lg-6">
+                                    <div class="form-group">
+                                        <label for="name">Your Name <span class="text-danger">*</span></label>
+                                        <input type="text" id="name" name="name" class="form-control" placeholder="Enter your name" value="{{ old('name') }}" required>
+                                    </div>
+                                </div>
+                                <div class="col-lg-6">
+                                    <div class="form-group">
+                                        <label for="rating">Rating <span class="text-danger">*</span></label>
+                                        <select id="rating" name="rating" class="form-control" required>
+                                            <option value="">Select Rating</option>
+                                            <option value="5" {{ old('rating') == '5' ? 'selected' : '' }}>5 Stars</option>
+                                            <option value="4" {{ old('rating') == '4' ? 'selected' : '' }}>4 Stars</option>
+                                            <option value="3" {{ old('rating') == '3' ? 'selected' : '' }}>3 Stars</option>
+                                            <option value="2" {{ old('rating') == '2' ? 'selected' : '' }}>2 Stars</option>
+                                            <option value="1" {{ old('rating') == '1' ? 'selected' : '' }}>1 Star</option>
+                                        </select>
+                                    </div>
+                                </div>
+                                <div class="col-lg-12">
+                                    <div class="form-group">
+                                        <label for="image">Profile Image (Optional)</label>
+                                        <input type="file" id="image" name="image" class="form-control" accept="image/*">
+                                        <small class="form-text text-muted">Max file size: 2MB. Supported formats: JPG, JPEG, PNG</small>
+                                    </div>
+                                </div>
+                                <div class="col-lg-12">
+                                    <div class="form-group">
+                                        <label for="message">Your Testimonial <span class="text-danger">*</span></label>
+                                        <textarea id="message" name="message" class="form-control" rows="5" placeholder="Share your experience..." required>{{ old('message') }}</textarea>
+                                    </div>
+                                </div>
+                                <div class="col-lg-12">
+                                    <button type="submit" class="default-btn btn-two">
+                                        Submit Testimonial
+                                        <i class="flaticon-right"></i>
+                                    </button>
+                                </div>
+                            </div>
+                        </form>
                     </div>
                 </div>
             </div>
         </div>
     </div>
-    <!-- Testimonials Inner End -->
+    <!-- Submit Testimonial Section End -->
 
     <!-- Footer Area -->
     @include('layout.footer')

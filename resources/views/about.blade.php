@@ -80,7 +80,7 @@
     </div>
     <!-- About Detl End -->
 
-    <!-- Product Area -->
+    {{-- <!-- Product Area -->
     <section class="product-area pt-100 pb-70">
         <div class="container">
             <div class="section-title text-center mb-50">
@@ -448,7 +448,7 @@
                 </div>
             </div>
         </div>
-    </section>
+    </section> --}}
     <!-- News Area End -->
 
     <!-- Footer Area -->

@@ -63,6 +63,7 @@
                             </a>
                             <div class="gallery-content">
                                 <h3>{{ $gallery->title }}</h3>
+                                <p>{{ $gallery->deskripsi }}</p>
                             </div>
                         </div>
                     </div>

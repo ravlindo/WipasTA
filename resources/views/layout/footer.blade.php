@@ -1,184 +1,182 @@
- <footer class="footer-area">
-            <div class="footer-top pt-100 pb-70">
-                <div class="container">
-                    <div class="row justify-content-center">
-                        <div class="col-lg-4 col-sm-6">
-                            <div class="footer-content">
-                                <div class="footer-conten-title">
-                                    <a href="index.html"><img src="{{ asset("template/assets/img/logo.png") }}" alt="Logo"></a>
-                                    <p>
-                                        Lorem ipsum dolor sit amet, mattetur adipiscing elit, sed do eiusmod.
-                                    </p>
-                                </div>
-
-                                <div class="newsleter-area">
-                                    <h3>Join Newsletter</h3>
-                                    <form class="newsletter-form" data-toggle="validator">
-                                        <input type="email" class="form-control" placeholder="Email" name="EMAIL" required autocomplete="off">
-
-                                        <button class="subscribe-btn" type="submit">
-                                            Subscribe
-                                        </button>
-
-                                        <div id="validator-newsletter" class="form-result"></div>
-                                    </form>
-                                </div>
-
-                                <div class="footer-social">
-                                    <ul>
-                                        <li>
-                                            <a href="https://www.facebook.com/login/" target="_blank">
-                                                <i class="fab fa-facebook-f"></i>
-                                            </a>
-                                        </li>
-                                        <li>
-                                            <a href="https://twitter.com/i/flow/login" target="_blank">
-                                                <i class="fab fa-twitter"></i>
-                                            </a>
-                                        </li>
-                                        <li>
-                                            <a href="https://www.instagram.com/accounts/login/?hl=en" target="_blank">
-                                                <i class="fab fa-instagram"></i>
-                                            </a>
-                                        </li>
-                                        <li>
-                                            <a href="https://www.google.com/" target="_blank">
-                                                <i class="fab fa-google-plus-g"></i>
-                                            </a>
-                                        </li>
-                                    </ul>
-                                </div>
-
-                            </div>
+<footer class="footer-area">
+    <div class="footer-top pt-100 pb-70">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-lg-4 col-sm-6">
+                    <div class="footer-content">
+                        <div class="footer-conten-title">
+                            <a href="{{ route('landingpage.home') }}">
+                                <img src="{{ asset('template/assets/img/logoo.png') }}" alt="WIPASTA Logo">
+                            </a>
+                            <p>
+                                Temukan keindahan pantai-pantai eksotis di Tulungagung melalui platform digital kami.
+                                Jelajahi destinasi wisata pantai terbaik dengan informasi lengkap dan terkini.
+                            </p>
                         </div>
 
-                        <div class="col-lg-2 col-sm-6">
-                            <div class="footer-list">
-                                <h3>Our Service</h3>
-                                <ul>
-                                    <li>
-                                        <a href="services.html">Swimming Service</a>
-                                    </li>
-                                    <li>
-                                        <a href="services.html">Diving Service</a>
-                                    </li>
-                                    <li>
-                                        <a href="courses.html">Swimming Course</a>
-                                    </li>
-                                    <li>
-                                        <a href="courses.html">Diving Course</a>
-                                    </li>
-                                    <li>
-                                        <a href="services.html">Swimming Imported</a>
-                                    </li>
-                                    <li>
-                                        <a href="shop.html">Equipments</a>
-                                    </li>
-                                </ul>
-                            </div>
+                        <div class="newsleter-area">
+                            <h3>Berlangganan Newsletter</h3>
+                            <form class="newsletter-form" data-toggle="validator">
+                                <input type="email" class="form-control" placeholder="Email Anda" name="EMAIL" required autocomplete="off">
+                                <button class="subscribe-btn" type="submit">
+                                    Berlangganan
+                                </button>
+                                <div id="validator-newsletter" class="form-result"></div>
+                            </form>
                         </div>
 
-                        <div class="col-lg-3 col-sm-6">
-                            <div class="footer-list ml-50">
-                                <h3>Quick Links</h3>
-                                <ul>
-                                    <li>
-                                        <a href="faq.html">FAQ</a>
-                                    </li>
-                                    <li>
-                                        <a href="services.html">Services</a>
-                                    </li>
-                                    <li>
-                                        <a href="service-details.html">Career</a>
-                                    </li>
-                                    <li>
-                                        <a href="courses.html">Courses</a>
-                                    </li>
-                                    <li>
-                                        <a href="privacy-policy.html">Privacy & Policy</a>
-                                    </li>
-                                    <li>
-                                        <a href="terms-condition.html">Terms & Conditions</a>
-                                    </li>
-                                </ul>
-                            </div>
-                        </div>
-
-                        <div class="col-lg-3 col-sm-6">
-                            <div class="footer-list">
-                                <h3>Contacts</h3>
-                                <ul>
-                                    <li>
-                                        <a href="tel:+1123456789">
-                                            <i class="fas fa-mobile-alt"></i>
-                                            +1 123 456 789
-                                        </a>
-                                    </li>
-                                    <li>
-                                        <a href="tel:+1123456359">
-                                            <i class="fas fa-mobile-alt"></i>
-                                            +1 123 456 359
-                                        </a>
-                                    </li>
-                                    <li>
-                                        <a href="https://templates.hibootstrap.com/cdn-cgi/l/email-protection#ec89818d8580ac88838e8e95c28f8381">
-                                            <i class="far fa-envelope"></i>
-                                            <span class="__cf_email__" data-cfemail="cca9a1ada5a08ca8a3aeaeb5e2afa3a1">[email&#160;protected]</span>
-                                        </a>
-                                    </li>
-                                    <li>
-                                        <a href="https://templates.hibootstrap.com/cdn-cgi/l/email-protection#4f272a2323200f2b202d2d36612c2022">
-                                            <i class="far fa-envelope"></i>
-                                            <span class="__cf_email__" data-cfemail="6109040d0d0e21050e0303184f020e0c">[email&#160;protected]</span>
-                                        </a>
-                                    </li>
-                                    <li>
-                                        <i class="fas fa-map-marker-alt"></i>
-                                        28/A street, New York, USA
-                                    </li>
-                                </ul>
-                            </div>
+                        <div class="footer-social">
+                            <ul>
+                                <li>
+                                    <a href="https://www.facebook.com/" target="_blank" title="Facebook">
+                                        <i class="fab fa-facebook-f"></i>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="https://www.instagram.com/" target="_blank" title="Instagram">
+                                        <i class="fab fa-instagram"></i>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="https://www.youtube.com/" target="_blank" title="YouTube">
+                                        <i class="fab fa-youtube"></i>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="https://www.tiktok.com/" target="_blank" title="TikTok">
+                                        <i class="fab fa-tiktok"></i>
+                                    </a>
+                                </li>
+                            </ul>
                         </div>
                     </div>
                 </div>
-            </div>
 
-            <div class="footer-bottom">
-                <div class="container">
-                    <div class="row align-items-center justify-content-center">
-                        <div class="col-lg-7">
-                            <div class="bottom-list">
-                                <ul>
-                                    <li>
-                                        <a href="index.html">Home</a>
-                                    </li>
-                                    <li>
-                                        <a href="about.html">About</a>
-                                    </li>
-                                    <li>
-                                        <a href="services.html">Services</a>
-                                    </li>
-                                    <li>
-                                        <a href="gallery.html">Gallery</a>
-                                    </li>
-                                    <li>
-                                        <a href="news.html">News</a>
-                                    </li>
-                                    <li>
-                                        <a href="shop.html">Shop</a>
-                                    </li>
-                                    <li>
-                                        <a href="contact.html">Contact</a>
-                                    </li>
-                                </ul>
-                            </div>
-                        </div>
-                        <div class="col-lg-5">
-                            <div class="bottom-text">
-                                <p>© Dobby is Proudly Owned by <a href="https://hibootstrap.com/" target="_blank">HiBootstrp</a></p>
-                            </div>
-                        </div>
+                <div class="col-lg-2 col-sm-6">
+                    <div class="footer-list">
+                        <h3>Menu Utama</h3>
+                        <ul>
+                            <li>
+                                <a href="{{ route('landingpage.home') }}">Beranda</a>
+                            </li>
+                            <li>
+                                <a href="{{ route('about.home') }}">Tentang Kami</a>
+                            </li>
+                            <li>
+                                <a href="{{ route('galeri.home') }}">Galeri</a>
+                            </li>
+                            <li>
+                                <a href="{{ route('testimoni.home') }}">Testimonial</a>
+                            </li>
+                            <li>
+                                <a href="{{ route('news.home') }}">Berita</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="col-lg-3 col-sm-6">
+                    <div class="footer-list ml-50">
+                        <h3>Pantai Populer</h3>
+                        <ul>
+                            <li>
+                                <a href="#">Pantai Popoh</a>
+                            </li>
+                            <li>
+                                <a href="#">Pantai Gemah</a>
+                            </li>
+                            <li>
+                                <a href="#">Pantai Kutang</a>
+                            </li>
+                            <li>
+                                <a href="#">Pantai Ngeliyep</a>
+                            </li>
+                            <li>
+                                <a href="#">Pantai Tamban</a>
+                            </li>
+                            <li>
+                                <a href="#">Pantai Sine</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="col-lg-3 col-sm-6">
+                    <div class="footer-list">
+                        <h3>Kontak Kami</h3>
+                        <ul>
+                            <li>
+                                <a href="tel:+6281234567890">
+                                    <i class="fas fa-mobile-alt"></i>
+                                    +62 812-3456-7890
+                                </a>
+                            </li>
+                            <li>
+                                <a href="tel:+6289876543210">
+                                    <i class="fas fa-mobile-alt"></i>
+                                    +62 898-7654-3210
+                                </a>
+                            </li>
+                            <li>
+                                <a href="mailto:info@wipsata.com">
+                                    <i class="far fa-envelope"></i>
+                                    info@wipsata.com
+                                </a>
+                            </li>
+                            <li>
+                                <a href="mailto:contact@wipsata.com">
+                                    <i class="far fa-envelope"></i>
+                                    contact@wipsata.com
+                                </a>
+                            </li>
+                            <li>
+                                <i class="fas fa-map-marker-alt"></i>
+                                Jl. Raya Pantai No. 123<br>
+                                <span style="padding-left: 24px;">Tulungagung, Jawa Timur</span>
+                            </li>
+                        </ul>
                     </div>
                 </div>
             </div>
-        </footer>
+        </div>
+    </div>
+
+    <div class="footer-bottom">
+        <div class="container">
+            <div class="row align-items-center justify-content-center">
+                <div class="col-lg-7">
+                    <div class="bottom-list">
+                        <ul>
+                            <li>
+                                <a href="{{ route('landingpage.home') }}">Beranda</a>
+                            </li>
+                            <li>
+                                <a href="{{ route('about.home') }}">Tentang Kami</a>
+                            </li>
+                            <li>
+                                <a href="{{ route('galeri.home') }}">Galeri</a>
+                            </li>
+                            <li>
+                                <a href="{{ route('testimoni.home') }}">Testimonial</a>
+                            </li>
+                            <li>
+                                <a href="{{ route('news.home') }}">Berita</a>
+                            </li>
+                            <li>
+                                <a href="#">Kebijakan Privasi</a>
+                            </li>
+                            <li>
+                                <a href="#">Syarat & Ketentuan</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-lg-5">
+                    <div class="bottom-text">
+                        <p>© {{ date('Y') }} WIPASTA - Wisata Pantai Tulungagung. All Rights Reserved.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</footer>

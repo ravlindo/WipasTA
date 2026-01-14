@@ -36,8 +36,8 @@
                                 </p>
 
                                 <div class="slider-btn">
-                                    <a href="about.html" class="default-btn1">Explore More</a>
-                                    <a href="contact.html" class="default-btn2 ml-20">Contact Us</a>
+                                    {{-- <a href="about.html" class="default-btn1">Explore More</a>
+                                    <a href="contact.html" class="default-btn2 ml-20">Contact Us</a> --}}
                                 </div>
                             </div>
                         </div>
@@ -60,8 +60,8 @@
                                 </p>
 
                                 <div class="slider-btn">
-                                    <a href="about.html" class="default-btn1">Explore More</a>
-                                    <a href="contact.html" class="default-btn2 ml-20">Contact Us</a>
+                                    {{-- <a href="about.html" class="default-btn1">Explore More</a>
+                                    <a href="contact.html" class="default-btn2 ml-20">Contact Us</a> --}}
                                 </div>
                             </div>
                         </div>
@@ -83,8 +83,8 @@
                                 </p>
 
                                 <div class="slider-btn">
-                                    <a href="about.html" class="default-btn1">Explore More</a>
-                                    <a href="contact.html" class="default-btn2 ml-20">Contact Us</a>
+                                    {{-- <a href="about.html" class="default-btn1">Explore More</a>
+                                    <a href="contact.html" class="default-btn2 ml-20">Contact Us</a> --}}
                                 </div>
                             </div>
                         </div>
@@ -151,7 +151,7 @@
                         <div class="section-title mb-4">
                             <span
                                 class="inline-block mb-3 px-4 py-1 text-sm font-semibold text-blue-600 bg-blue-100 rounded-full">
-                                About Us
+                               tentang kami
                             </span>
 
                             <h2 class="text-4xl fw-bold leading-tight mb-4">
@@ -171,7 +171,7 @@
 
                         <div class="about-btn mt-4">
                             <a href="{{ route('about.home') }}" class="default-btn2 shadow-lg">
-                                Know More
+                                lebih lanjut
                             </a>
                         </div>
                     </div>
@@ -242,26 +242,25 @@
     <!-- Course Area -->
     <div class="course-area pt-100 pb-70">
         <div class="container-fluid m-0 p-0">
-            <div class="row justify-content-center">
+            <div class="row justify-content-center align-items-center">
                 <div class="col-lg-7 col-xxl-6">
                     <div class="course-item">
                         <div class="course-text">
-                            <span>Swimming Course</span>
-                            <h2>Swimming Course Taken by Our Most Experienced Trainer</h2>
+                            <span>PANTAI UNGGULAN</span>
+                            <h2>Ini adalah salah satu pantai unggulan yang ada di Tulungagung</h2>
                             <p>
-                                Attempt. Origin it the get and the been came into the fitted would another behind think
-                                insur is ance sister hell
-                                mild, back least on war, can of, remote become into and and that the that as a me
-                                skyline was first him many instruments,
-                                nearby a to he purpose series helplessly didn't has a long question tricoloured half
-                                here, the links needed in considerable.
-                            </p>
-                            <p>
-                                Months known was first own, them. Travelling of by velocity agreed by clock of this
-                                to dedicat ed with days, and on viewings the brought we her with been decision-making.
+                                <strong>Pantai Kedung Tumpang</strong><br>
+                                Unik dengan laguna alami, populer untuk pecinta foto dan petualangan.
+                                Pantai ini punya kolam-kolam alami di tepi karang yang jadi spot foto favorit. Akses
+                                cukup menantang sehingga lebih cocok untuk touring motor.<br><br>
+
+                                Lokasi & Rute: Desa Pucanglaban, jalan menanjak sempit.<br>
+                                Harga Tiket: Gratis. Membayar biaya parkir Rp3.000 - Rp10.000<br>
+                                Daya Tarik: Laguna alami, sunset, spot foto Instagramable.<br>
+                                Fasilitas: Parkir sederhana, toilet, area camping.
                             </p>
                             <div class="course-btn">
-                                <a href="courses.html" class="default-btn2">Take Course</a>
+                                {{-- <a href="courses.html" class="default-btn2">Lihat Detail</a> --}}
                             </div>
                         </div>
                     </div>
@@ -269,59 +268,62 @@
 
                 <div class="col-lg-5 col-xxl-6">
                     <div class="course-img">
-                        <img src="{{ asset('template/assets/img/course/1.jpg') }}" alt="Course Images">
+                        <img src="{{ asset('template/assets/img/unggulan.jpeg') }}" alt="Pantai Kedung Tumpang"
+                            style="width: 100%; max-height: 400px; object-fit: cover; border-radius: 10px;">
                     </div>
                     <div class="course-dots">
                         <img src="{{ asset('template/assets/img/shape/dots-blue.png') }}" alt="Dots Images">
                     </div>
                 </div>
+
+            </div>
+        </div>
+    </div>
+
+   <div class="course-another pt-70">
+    <div class="container-fluid m-0 p-0"> <div class="row justify-content-center align-items-center"> <div class="col-lg-5 col-xxl-6">
+                <div class="course-img-2">
+                    <img src="{{ asset('template/assets/img/pacarr.jpeg') }}"
+                         alt="Pantai Pacar"
+                         style="width: 100%; max-height: 400px; object-fit: cover; border-radius: 10px;">
+                </div>
+                <div class="course-dots-2">
+                    <img src="{{ asset('template/assets/img/shape/dots-pink.png') }}" alt="Dots Images">
+                </div>
             </div>
 
-            <div class="course-another pt-70">
-                <div class="row justify-content-center">
-                    <div class="col-lg-5 col-xxl-6">
-                        <div class="course-img-2">
-                            <img src="{{ asset('template/assets/img/course/2.jpg') }}" alt="Course Images">
-                        </div>
-                        <div class="course-dots-2">
-                            <img src="{{ asset('template/assets/img/shape/dots-pink.png') }}" alt="Dots Images">
-                        </div>
-                    </div>
-
-                    <div class="col-lg-7 col-xxl-6">
-                        <div class="course-item-2">
-                            <div class="course-text">
-                                <span>Diving Course</span>
-                                <h2>Diving Course Taken by Our Most Experienced Trainer</h2>
-                                <p>
-                                    Attempt. Origin it the get and the been came into the fitted would another behind
-                                    think insur is ance sister hell
-                                    mild, back least on war, can of, remote become into and and that the that as a me
-                                    skyline was first him many instruments,
-                                    nearby a to he purpose series helplessly didn't has a long question tricoloured half
-                                    here, the links needed in considerable.
-                                </p>
-                                <p>
-                                    Months known was first own, them. Travelling of by velocity agreed by clock of this
-                                    to dedicat ed with days, and on viewings the brought we her with been
-                                    decision-making.
-                                </p>
-                                <div class="course-btn">
-                                    <a href="courses.html" class="default-btn2">Take Course</a>
-                                </div>
-                            </div>
+            <div class="col-lg-7 col-xxl-6">
+                <div class="course-item-2">
+                    <div class="course-text">
+                        <span>DESTINASI FAVORIT</span>
+                        <h2>Pantai Pacar: Pesona Air Terjun di Bibir Pantai</h2>
+                        <p>
+                            Pantai Pacar menawarkan pesona eksotis dengan keunikan langka berupa air terjun mini yang mengalir langsung ke hamparan pasir putih. Destinasi ini menjadi favorit para pecinta alam dan fotografi, khususnya sebagai lokasi <em>camping</em> di atas rerumputan hijau yang menghadap langsung ke laut lepas.
+                        </p>
+                        <p>
+                            <strong>Informasi Singkat:</strong><br>
+                            Lokasi & Rute: Desa Pucanglaban, Tulungagung. Akses jalan sudah cor.<br>
+                            Harga Tiket: Rp5.000 per orang. Parkir Rp5.000 - Rp10.000.<br>
+                            Daya Tarik: Air terjun pantai, pasir putih, camping ground luas.<br>
+                            Fasilitas: Warung 24 jam, toilet bersih, mushola.
+                        </p>
+                        <div class="course-btn">
+                            {{-- <a href="courses.html" class="default-btn2">Lihat Detail</a> --}}
                         </div>
                     </div>
                 </div>
             </div>
-        </div>
-        <div class="icon-shape-3">
-            <i class="flaticon-swimming"></i>
-        </div>
-        <div class="icon-shape-4">
-            <i class="flaticon-diver"></i>
+
         </div>
     </div>
+</div>
+
+<div class="icon-shape-3">
+    <i class="flaticon-swimming"></i>
+</div>
+<div class="icon-shape-4">
+    <i class="flaticon-diver"></i>
+</div>
     <!-- Course Area End -->
 
     <!-- Product Area -->
@@ -332,11 +334,10 @@
     <section class="gallery-area pt-100 pb-70">
         <div class="container">
             <div class="section-title text-center mb-50">
-                <span>Our Gallery</span>
-                <h2>Amazing Photos at Our Daily Dobby</h2>
+                <span>Galery Kami</span>
+                <h2>Pesona Foto Pantai Tulungagung</h2>
                 <p>
-                    The introduced now, the they expect, animals the desk, and catch
-                    temple. More seven my couldn't it the character using recommended.
+                    Lihat berbagai macam keindahan pantai tulungagung dengan pesonanya masing-masing
                 </p>
                 <div class="section-btn text-center mt-4">
                     <a href="{{ route('galeri.home') }}" class="default-btn1">View All Gallery</a>
@@ -345,21 +346,49 @@
             <div class="gallery-view">
                 <div class="row justify-content-center">
                     @forelse($galleries as $gallery)
-                    <div class="col-lg-4 col-sm-6">
-                        <div class="gallery-item">
-                            <a href="{{ asset('storage/' . $gallery->gambar) }}">
-                                <img src="{{ asset('storage/' . $gallery->gambar) }}" alt="Gallery Images">
-                            </a>
-                            <div class="gallery-text">
-                                <h3>{{ $gallery->title }}</h3>
+                        <div class="col-lg-4 col-sm-6">
+                            <div class="gallery-item">
+                                <a href="#" data-bs-toggle="modal"
+                                    data-bs-target="#galleryModal{{ $gallery->id }}">
+                                    <img src="{{ asset('storage/' . $gallery->gambar) }}" alt="Gallery Images">
+                                </a>
+                                <div class="gallery-text">
+                                    <h3>{{ $gallery->title }}</h3>
+                                    <p>{{ Str::limit($gallery->deskripsi, 250) }}</p>
+                                </div>
                             </div>
                         </div>
-                    </div>
                     @empty
-                    <div class="col-12 text-center">
-                        <p>Belum ada galeri yang ditambahkan.</p>
-                    </div>
+                        <div class="col-12 text-center">
+                            <p>Belum ada galeri yang ditambahkan.</p>
+                        </div>
                     @endforelse
+
+                    <!-- Gallery Modals -->
+                    @foreach ($galleries as $gallery)
+                        <div class="modal fade" id="galleryModal{{ $gallery->id }}" tabindex="-1"
+                            aria-labelledby="galleryModalLabel{{ $gallery->id }}" aria-hidden="true">
+                            <div class="modal-dialog modal-dialog-centered">
+                                <div class="modal-content">
+                                    <div class="modal-header">
+                                        <h5 class="modal-title" id="galleryModalLabel{{ $gallery->id }}">
+                                            {{ $gallery->title }}</h5>
+                                        <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                            aria-label="Close"></button>
+                                    </div>
+                                    <div class="modal-body">
+                                        <img src="{{ asset('storage/' . $gallery->gambar) }}" alt="Gallery Images"
+                                            class="img-fluid mb-3">
+                                        <p>{{ $gallery->deskripsi }}</p>
+                                    </div>
+                                    <div class="modal-footer">
+                                        <a href="{{ route('galeri.home') }}" class="btn btn-primary">Lihat Semua
+                                            Galeri</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    @endforeach
                 </div>
             </div>
         </div>
@@ -374,108 +403,55 @@
     <section class="news-area pb-70">
         <div class="container">
             <div class="section-title text-center mb-50">
-                <span>Our News</span>
-                <h2>Daily Updates of Our Dobby</h2>
+                <span>Berita Pantai</span>
+                <h2>Berita terkini seputar pantai</h2>
                 <p>
-                    The introduced now, the they expect, animals the desk, and catch temple.
-                    More seven my couldn't it the character using recommended.
+                    Dapatkan informasi aktual mengenai kondisi pasang surut, cuaca ekstrem, dan aktivitas warga pesisir.
+                    Kami menyajikan laporan langsung dari lapangan demi keselamatan dan wawasan Anda
                 </p>
             </div>
             <div class="row justify-content-center">
-                <div class="col-lg-4 col-md-6">
-                    <div class="news-card">
-                        <div class="news-img">
-                            <a href="news-details.html">
-                                <img src="{{ asset('template/assets/img/news/1.jpg') }}" alt="News Images">
-                            </a>
-                            <div class="sub-text">
-                                <a href="news-details.html">SCUBA DIVING</a>
+                @forelse($news as $item)
+                    <div class="col-lg-4 col-md-6">
+                        <div class="news-card">
+                            <div class="news-img">
+                                @if ($item->image)
+                                    <img src="{{ asset('storage/' . $item->image) }}" alt="Gambar Berita">
+                                @else
+                                    <img src="{{ asset('template/assets/img/news/1.jpg') }}"
+                                        alt="Default News Image">
+                                @endif
+                                <div class="sub-text">
+                                    <span>BERITA PANTAI</span>
+                                </div>
                             </div>
-                        </div>
-                        <ul>
-                            <li>
-                                <a href="news-details.html">John Doe</a>
-                            </li>
-                            <li>26 APR 2024</li>
-                        </ul>
-                        <div class="news-content">
-                            <a href="news-details.html">
-                                <h3>New Scuba Diving Course Sheet Will Update Soon</h3>
-                            </a>
-                            <p>
-                                Less entirely counter. Parent, curiously, must would frequency,
-                                would very of wellfeigned legs, doctor back in the business.
-                            </p>
-                            <a href="news-details.html" class="news-icon">
-                                Read More
-                            </a>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="col-lg-4 col-md-6">
-                    <div class="news-card">
-                        <div class="news-img">
-                            <a href="news-details.html">
-                                <img src="{{ asset('template/assets/img/news/2.jpg') }}" alt="News Images">
-                            </a>
-                            <div class="sub-text">
-                                <a href="news-details.html">
-                                    SWIMMING EVENT
+                            <ul>
+                                <li>
+                                    Admin
+                                </li>
+                                <li>{{ $item->publish_date ? \Carbon\Carbon::parse($item->publish_date)->format('d M Y') : $item->created_at->format('d M Y') }}
+                                </li>
+                            </ul>
+                            <div class="news-content">
+                                <h3>{{ $item->title }}</h3>
+                                <p>
+                                    {{ Str::limit($item->content, 100) }}
+                                </p>
+                                <a href="{{ route('news.home') }}" class="news-icon">
+                                    Baca Selengkapnya
                                 </a>
                             </div>
                         </div>
-                        <ul>
-                            <li>
-                                <a href="news-details.html">John Doe</a>
-                            </li>
-                            <li>27 APR 2024</li>
-                        </ul>
-                        <div class="news-content">
-                            <a href="news-details.html">
-                                <h3>A Diving Event Will Happen at Dobby Center</h3>
-                            </a>
-                            <p>
-                                Less entirely counter. Parent, curiously, must would frequency,
-                                would very of wellfeigned legs, doctor back in the business.
+                    </div>
+                @empty
+                    <div class="col-12">
+                        <div class="text-center">
+                            <h4>Belum ada berita</h4>
+                            <p>Berita seputar pantai akan muncul di sini setelah ditambahkan melalui admin dashboard.
                             </p>
-                            <a href="news-details.html" class="news-icon">
-                                Read More
-                            </a>
                         </div>
                     </div>
-                </div>
-
-                <div class="col-lg-4  col-md-6 ">
-                    <div class="news-card">
-                        <div class="news-img">
-                            <a href="news-details.html">
-                                <img src="{{ asset('template/assets/img/news/3.jpg') }}" alt="News Images">
-                            </a>
-                            <div class="sub-text">
-                                <a href="news.html">EQUIPMENT</a>
-                            </div>
-                        </div>
-                        <ul>
-                            <li>
-                                <a href="news-details.html">John Doe</a>
-                            </li>
-                            <li>28 APR 2024</li>
-                        </ul>
-                        <div class="news-content">
-                            <a href="news-details.html">
-                                <h3>A Swimming Event Will Happen at Dobby Center</h3>
-                            </a>
-                            <p>
-                                Less entirely counter. Parent, curiously, must would frequency,
-                                would very of wellfeigned legs, doctor back in the business.
-                            </p>
-                            <a href="news-details.html" class="news-icon">
-                                Read More
-                            </a>
-                        </div>
-                    </div>
-                </div>
+                @endforelse
             </div>
         </div>
     </section>

@@ -4,6 +4,8 @@ use App\Http\Controllers\AboutController;
 use App\Http\Controllers\AdminAbout;
 use App\Http\Controllers\AdminGallery;
 use App\Http\Controllers\AdminDasboard;
+use App\Http\Controllers\AdminTestimonial;
+use App\Http\Controllers\AdminNews;
 use App\Http\Controllers\LandingpageHomeController;
 use App\Http\Controllers\Auth\LoginController;
 use App\Http\Controllers\Auth\RegisterController;
@@ -13,6 +15,7 @@ use Illuminate\Support\Facades\Route;
 
 Route::get('/', [LandingpageHomeController::class, 'index'])->name('landingpage.home');
 Route::get('/testimoni', [LandingpageHomeController::class, 'testimoni'])->name('testimoni.home');
+Route::post('/testimoni/submit', [LandingpageHomeController::class, 'submitTestimonial'])->name('testimoni.submit');
 
 // Authentication Routes
 Route::get('/login', [LoginController::class, 'showLoginForm'])->name('login');
@@ -24,6 +27,7 @@ Route::post('/register', [RegisterController::class, 'register']);
 
 Route::get('/about', [LandingpageHomeController::class, 'about'])->name('about.home');
 Route::get('/galeri', [LandingpageHomeController::class, 'galeri'])->name('galeri.home');
+Route::get('/news', [LandingpageHomeController::class, 'news'])->name('news.home');
 Route::get('/Dashboard', [AdminDasboard::class, 'index'])->name('AdminDasboard.home')->middleware('auth');
 
 // --- ROUTE ADMIN ABOUT ---
@@ -48,3 +52,23 @@ Route::post('/admin/gallery/store', [AdminGallery::class, 'store'])->name('galle
 Route::put('/admin/gallery/{id}', [AdminGallery::class, 'update'])->name('admin.gallery.update');
 Route::delete('/admin/gallery/{id}', [AdminGallery::class, 'destroy'])
     ->name('gallery.destroy');
+
+// --- ROUTE ADMIN TESTIMONIAL ---
+Route::get('/admin/testimonial', [AdminTestimonial::class, 'index'])->name('testimonial.index');
+Route::get('/admin/testimonial/create', [AdminTestimonial::class, 'form'])->name('admin.testimonial.create');
+Route::get('/admin/testimonial/{id}/edit', [AdminTestimonial::class, 'form'])->name('admin.testimonial.edit');
+
+Route::post('/admin/testimonial/store', [AdminTestimonial::class, 'store'])->name('testimonial.store');
+Route::put('/admin/testimonial/{id}', [AdminTestimonial::class, 'update'])->name('admin.testimonial.update');
+Route::delete('/admin/testimonial/{id}', [AdminTestimonial::class, 'destroy'])
+    ->name('testimonial.destroy');
+
+// --- ROUTE ADMIN NEWS ---
+Route::get('/admin/news', [AdminNews::class, 'index'])->name('news.index');
+Route::get('/admin/news/create', [AdminNews::class, 'form'])->name('admin.news.create');
+Route::get('/admin/news/{id}/edit', [AdminNews::class, 'form'])->name('admin.news.edit');
+
+Route::post('/admin/news/store', [AdminNews::class, 'store'])->name('news.store');
+Route::put('/admin/news/{id}', [AdminNews::class, 'update'])->name('admin.news.update');
+Route::delete('/admin/news/{id}', [AdminNews::class, 'destroy'])
+    ->name('news.destroy');
